@@ -10,6 +10,7 @@ const taskInput = document.querySelector(".new-task");
 const form = document.querySelectorAll("form");
 const todo = document.querySelector(".todo");
 let remaining = document.querySelector(".remaining");
+
 let remainCount = 0;
 let count = 4;
 
@@ -72,9 +73,12 @@ function createTask() {
   task.dataset.listName = taskTitle.innerHTML;
   const inner = `<span class="custom-checkbox"></span>${taskInput.value}`;
 
+  checkbox.addEventListener("change", updateRemaining);
+
   taskLable.innerHTML = inner;
 
   taskArr = document.querySelectorAll(".task");
+
   count++;
 
   updateRemaining();
@@ -84,9 +88,10 @@ function updateRemaining() {
   const total = taskArr.length;
   let displayNone = 0;
   taskArr.forEach((task) => {
+    const check = task.querySelector("input");
     const displayStyle = window.getComputedStyle(task);
 
-    if (displayStyle.getPropertyValue("display") == "none") {
+    if (displayStyle.getPropertyValue("display") == "none" || check.checked) {
       displayNone++;
     }
   });
