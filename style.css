@@ -76,7 +76,8 @@ html,body{
 .task-title{
     display:flex;
     justify-content:space-between;
-    padding:20px 0px 10px 40px;
+    align-items:end;
+    padding:20px 0px 0px 40px;
     font-size:3rem;
     font-weight:700;
     width: 100%;
@@ -92,7 +93,9 @@ html,body{
     padding-bottom:0px;
     font-weight:400;
     font-size: 0.8rem;
+    
 }
+
 .todo{
     font-size:1rem;
 }

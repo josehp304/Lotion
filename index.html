@@ -1,62 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="data:image/png;base64,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" type="image/x-icon">
-    <title> Lotion</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="data:image/png;base64,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"
+      type="image/x-icon"
+    />
+    <title>Lotion</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="container">
-        <div class="header">Lotion</div>
-        <div class="lists">
-            <div class="list-title">My Lists</div>
-            <ul>
-                <li class="list active">School</li>
-                <li class="list">coding</li>
-                <li class="list">workout full body</li>
-            </ul>
-            <form action="">
-                <input type="text" id="new list" class="new new-list" placeholder="Add new list">
-                <button class="btn create" aria-label="create new list">+</button>
-            </form>
+      <div class="header">Lotion</div>
+      <div class="lists">
+        <div class="list-title">My Lists</div>
+        <ul class="list-ul">
+          <li class="list active">School</li>
+          <li class="list">coding</li>
+          <li class="list">workout full body</li>
+        </ul>
+        <form action="">
+          <input
+            type="text"
+            id="new list"
+            class="new new-list"
+            placeholder="Add new list"
+          />
+          <button class="btn btn-list" aria-label="create new list">+</button>
+        </form>
+      </div>
+      <div class="tasks">
+        <div class="task-title">
+          <h3>School</h3>
+          <p class="remaining">0 Remaining</p>
         </div>
-        <div class="tasks">
-            <div class="task-title"><h3>School</h3>
-                <p class="remaining">3 Remaining</p>
-            </div>
-            <div class="todo">
-                <div class="task">                
-                    <input type="checkbox" id="task1"> 
-                    
-                    <label for="task1"><span class="custom-checkbox"></span>do homework</label></br></div>
-                <div class="task">
-                    <input type="checkbox" id="task2">
-                    
-                    <label for="task2"><span class="custom-checkbox"></span>study for sem exam</label></br>
-                    </div>
-                <div class="task">
-                    <input type="checkbox" id="task3">
-                    
-                    <label for="task3"><span class="custom-checkbox"></span>work on project</label></br>
-                    </div>
-
-                
-            </div>
-            <form action="">
-                <input type="text" id="new list" class="new new-list" placeholder="Add new list">
-                <button class="btn create" aria-label="create new task">+</button>
-            </form>
-            <div class="delete">
-                <button class="btn-delete clr"> clear tasks</button>
-                <button class="btn-delete clr-c">clear completed tasks</button>
-            </div>
+        <div class="todo"></div>
+        <form action="">
+          <input
+            type="text"
+            id="new list"
+            class="new new-task"
+            placeholder="Add new list"
+          />
+          <button class="btn btn-task" aria-label="create new task">+</button>
+        </form>
+        <div class="delete">
+          <button class="btn-delete clr">clear tasks</button>
+          <button class="btn-delete clr-c">clear completed tasks</button>
         </div>
+      </div>
     </div>
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
